@@ -1,0 +1,442 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    color: grey;
+}
+.container{
+    width: 100%;
+}
+.multi{
+    margin-top: 4%;
+    width: 100%;
+    
+}
+#heading {
+    text-transform: uppercase;
+    color: #fb6340;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left;
+    
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #fb6340;
+    outline-width: 0;
+}
+
+#msform .action-button {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    animation-delay: 0.8s;
+    border: 2px solid #fb6340;
+    text-decoration: none;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background: #fb6340;
+    color: #fff;
+    text-decoration: none;
+}
+
+#msform .action-button {
+    background-color: #fff; /* background putih */
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px 10px 10px;
+    border: 2px solid #fb6340;
+    padding: 11.5px 20px; /* padding */
+    font-size: 14px; /* ukuran font */
+    cursor: pointer; /* pointer cursor */
+    color: #fb6340;
+    font-weight: 600;
+    width: 100px;
+    float: right;
+    border: 2px solid #fb6340;
+    text-decoration: none;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    color: white;
+    background-color: #fb6340;
+}
+
+#msform .action-button-previous {
+    background-color: #fff; /* background putih */
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px 10px 10px;
+    border: 2px solid #fb6340;
+    font-size: 14px; /* ukuran font */
+    cursor: pointer; /* pointer cursor */
+    color: #fb6340;
+    font-weight: 600;
+    width: 100px;
+    float: right;
+    border: 2px solid #fb6340;
+    text-decoration: none;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    color: white;
+    background-color: #fb6340;
+}
+.card{
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    border: 0 none;
+    
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #fb6340;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.orange-text {
+    color: #fb6340;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.white-text {
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: grey;
+    font-weight: normal;
+}
+.steps {
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+    color: grey;
+}
+
+.fieldlabels {
+    color: grey;
+    font-size: 13px;
+    text-align: left;
+}
+
+#progressbar {
+    padding-right: 35px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #fb6340;
+}
+
+#progressbar li {
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 15px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f0ae";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f0ca"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f24e";
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #fb6340;
+}
+
+.progress {
+    height: 20px;
+    max-width: 90%; /* Menambahkan properti max-width */
+    margin: 0 auto;
+}
+
+.progress-bar {
+    background-color: #673AB7;
+    width: 100%; 
+}
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+}
+#criteria{
+    width: 50px;
+}
+td{
+    padding-top: 57px;
+}
+
+/**
+* Extracted from: SweetAlert
+* Modified by: Istiak Tridip
+*/
+.success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+}
+
+.success-checkmark .check-icon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 4px solid #fb6340;
+}
+
+.success-checkmark .check-icon::before {
+    top: 3px;
+    left: -2px;
+    width: 30px;
+    transform-origin: 100% 50%;
+    border-radius: 100px 0 0 100px;
+}
+
+.success-checkmark .check-icon::after {
+    top: 0;
+    left: 30px;
+    width: 60px;
+    transform-origin: 0 50%;
+    border-radius: 0 100px 100px 0;
+    animation: rotate-circle 4.25s ease-in;
+}
+
+.success-checkmark .check-icon::before,
+.success-checkmark .check-icon::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    background: #ffffff;
+    transform: rotate(-45deg);
+}
+
+.success-checkmark .check-icon .icon-line {
+    height: 5px;
+    background-color: #fb6340;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+}
+
+.success-checkmark .check-icon .icon-line.line-tip {
+    top: 46px;
+    left: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+    animation: icon-line-tip 0.75s;
+}
+
+.success-checkmark .check-icon .icon-line.line-long {
+    top: 38px;
+    right: 8px;
+    width: 47px;
+    transform: rotate(-45deg);
+    animation: icon-line-long 0.75s;
+}
+
+.success-checkmark .check-icon .icon-circle {
+    top: -4px;
+    left: -4px;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: content-box;
+    border: 4px solid rgba(251, 99, 64, 0.5);
+}
+
+.success-checkmark .check-icon .icon-fix {
+    top: 8px;
+    width: 5px;
+    left: 26px;
+    z-index: 1;
+    height: 85px;
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+    5% {
+        transform: rotate(-45deg);
+    }
+    12% {
+        transform: rotate(-405deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}
