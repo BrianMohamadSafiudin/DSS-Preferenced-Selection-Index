@@ -49,7 +49,7 @@
         <div class="carousel-item">
           <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">What is PSI?</h2>
-            <p class="animate__animated animate__fadeInUp">PSI is a tool that uses a multi-criteria decision-making method. By inputting multiple job alternatives and setting criteria scores.</p>
+            <p class="animate__animated animate__fadeInUp">PSI is a tool that uses a multi-criteria decision-making method. By inputting multiple alternatives and setting criteria scores.</p>
             {{-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> --}}
           </div>
         </div>
