@@ -34,13 +34,13 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Career Preferences Selection</h2>
+                            <h2 id="heading">Preferences Selection</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
                                     <p>To proceed to the next step, please ensure that you have completed all the required fields. Don't worry if you're unsure about how the algorithm works, you can visit our "How It Works" page for a comprehensive guide.
-                                        
+
                                         Our <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page provides a step-by-step breakdown of the algorithm, so you can get a better understanding of how it operates. We believe that transparency is key, and we want to ensure that you have all the information you need to make informed decisions.
-                                        
+
                                         Thank you for choosing our platform, and we hope you find our service helpful and user-friendly.</p>
                                     </div>
                                 </div>
@@ -56,23 +56,23 @@
                                         <div class="form-card" id="alternative-container">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Job Alternatives :</h2>
+                                                    <h2 class="fs-title">Alternatives :</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p style="font-size: 13px">Please enter the job choices that you have obtained in this form to continue the process. <a style="text-decoration: none; color: #fb6340;" href="/csv">Using CSV?</a></p>
+                                                    <p style="font-size: 13px">Please enter the choices that you have obtained in this form to continue the process. <a style="text-decoration: none; color: #fb6340;" href="/csv">Using CSV?</a></p>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <script>
-                                                const alternativeCount = 20;
+                                                const alternativeCount = 10;
                                                 const alternativeContainer = document.querySelector('#alternative-container');
-                                                
+
                                                 for (let i = 1; i <= alternativeCount; i++) {
                                                     const label = document.createElement('label');
                                                     label.textContent = `Alternative ${i} : *`;
                                                     label.className = 'fieldlabels';
-                                                    
+
                                                     const input = document.createElement('input');
                                                     input.type = 'text';
                                                     input.className = 'mb-3';
@@ -80,18 +80,18 @@
                                                     input.name = `alternative${i}`;
                                                     input.placeholder = `Alternative ${i}`;
                                                     input.required = true;
-                                                    
+
                                                     alternativeContainer.appendChild(label);
                                                     alternativeContainer.appendChild(input);
                                                 }
-                                            </script>                                       
+                                            </script>
                                         </div>
                                         <input type="button" id="nextButton" class="next action-button" value="Next" />
                                         <script>
                                             // Get all input fields and the Next button
                                             const inputs = document.querySelectorAll('input[name^="alternative"]');
                                             const nextButton = document.getElementById('nextButton');
-                                            
+
                                             // Function to check if all input fields are filled
                                             function checkInputs() {
                                                 let isValid = true;
@@ -103,7 +103,7 @@
                                                 });
                                                 return isValid;
                                             }
-                                            
+
                                             // Add event listener to inputs
                                             inputs.forEach(input => {
                                                 input.addEventListener('input', () => {
@@ -114,7 +114,7 @@
                                                     }
                                                 });
                                             });
-                                            
+
                                             // Hide the Next button initially
                                             nextButton.style.display = 'none';
                                         </script>
@@ -123,34 +123,25 @@
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Job Criteria Score:</h2>
+                                                    <h2 class="fs-title">Criteria Score:</h2>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p style="font-size: 13px">Please enter the criteria scores for each job alternative previously entered. These scores reflect the importance or preference for each criterion in the decision-making process. Fill in all available criteria, namely :</p>
+                                                    <p style="font-size: 13px">Please enter the criteria scores for each alternative previously entered. These scores reflect the importance or preference for each criterion in the decision-making process. Fill in all available criteria, namely :</p>
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
-                                                        <div style="flex-basis: 15%;">
+                                                        <div style="flex-basis: 50%;">
                                                             <ul>
-                                                                <li>C1 : Salary</li>
-                                                                <li>C2 : Distance</li>
-                                                                <li>C3 : Company Benefits</li>
-                                                                <li>C4 : Working Hours</li>
-                                                                <li>C5 : Transportation</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div style="flex-basis: 95%;">
-                                                            <ul>
-                                                                <li>C6  : Work Experience</li>
-                                                                <li>C7  : Health Facilities</li>
-                                                                <li>C8  : Language Skills</li>
-                                                                <li>C9  : Working Environment</li>
-                                                                <li>C10 : Geographical Factor</li>
+                                                                <li>C1 : Penghasilan Tidak Tetap</li>
+                                                                <li>C2 : Tidak Memiliki Aset</li>
+                                                                <li>C3 : Memerlukan Bantuan Pangan Untuk Penduduk Miskin</li>
+                                                                <li>C4 : Memiliki Rumah Diatas Tanah Milik Sendiri</li>
+                                                                <li>C5 : Rumah Yang Dimiliki Tidak Layak Huni</li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="table-responsive">
                                                 <table class="table text-center">
                                                     <thead class="thead-dark">
@@ -161,21 +152,16 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
-                                                            <th >C6</th>
-                                                            <th >C7</th>
-                                                            <th >C8</th>
-                                                            <th >C9</th>
-                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body">
                                                     </tbody>
                                                 </table>
                                                 <script>
-                                                    const rowCount = 20;
-                                                    const colCount = 10;
+                                                    const rowCount = 10;
+                                                    const colCount = 5;
                                                     const tableBody = document.querySelector('#table-body');
-                                                    
+
                                                     for (let i = 0; i < rowCount; i++) {
                                                         const tr = document.createElement('tr');
                                                         const td1 = document.createElement('td');
@@ -199,7 +185,7 @@
                                                     }
                                                 </script>
                                             </div>
-                                        </div> 
+                                        </div>
                                         <input type="submit" name="next" class="next action-button" value="Submit" />
                                         <script>
                                             const inputs3 = document.querySelectorAll('input[type="number"]');
@@ -236,4 +222,4 @@
         </section>
     </main>
     @endsection
-    
+

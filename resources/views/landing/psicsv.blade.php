@@ -37,9 +37,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-10">
                                     <p>To proceed to the next step, please ensure that you have completed all the required fields. Don't worry if you're unsure about how the algorithm works, you can visit our "How It Works" page for a comprehensive guide.
-                                        
+
                                         Our <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page provides a step-by-step breakdown of the algorithm, so you can get a better understanding of how it operates. We believe that transparency is key, and we want to ensure that you have all the information you need to make informed decisions.
-                                        
+
                                         Thank you for choosing our platform, and we hope you find our service helpful and user-friendly.</p>
                                     </div>
                                 </div>
@@ -57,11 +57,6 @@
                                                 <th >C3</th>
                                                 <th >C4</th>
                                                 <th >C5</th>
-                                                <th >C6</th>
-                                                <th >C7</th>
-                                                <th >C8</th>
-                                                <th >C9</th>
-                                                <th >C10</th>
                                             </tr>
                                         </thead>
                                     </thead>
@@ -108,4 +103,4 @@
         </section>
     </main>
     @endsection
-    
+
