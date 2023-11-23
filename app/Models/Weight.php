@@ -16,9 +16,5 @@ class Weight extends Model
     'weight3',
     'weight4',
     'weight5',
-    'weight6',
-    'weight7',
-    'weight8',
-    'weight9',
-    'weight10'];
+];
 }
