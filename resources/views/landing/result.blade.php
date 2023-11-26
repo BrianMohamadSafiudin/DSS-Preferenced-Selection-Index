@@ -29,10 +29,10 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Career Preferences DSS Result</h2>
+                            <h2 id="heading">Hasil Sistem Pendukung Keputusan Preferensi Karir</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <p>This page displays the Preferenced Selection Index (PSI), which indicates how well a job matches someone's abilities, interests, and experience. The higher the PSI value, the more suitable the job is for someone's skills and interests. By using PSIwizard, you can find the most suitable career for you. Find the career you want now by using PSIwizard. If you're unsure about how the algorithm works, please visit the <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page for more information.</p>
+                                    <p>Halaman ini menampilkan Preference Selection Index (PSI), yang menunjukkan seberapa cocok suatu pekerjaan dengan kemampuan, minat, dan pengalaman seseorang. Semakin tinggi nilai PSI, semakin cocok pekerjaan tersebut dengan keterampilan dan minat seseorang. Dengan menggunakan PSIwizard, Anda dapat menemukan karir yang paling cocok untuk Anda. Temukan karir yang Anda inginkan sekarang dengan menggunakan PSIwizard. Jika Anda ragu tentang bagaimana algoritma ini bekerja, silakan kunjungi halaman <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">bagaimana cara kerjanya</a> untuk informasi lebih lanjut.</p>
                                 </div>
                             </div>
                             <div id="msform">
@@ -40,12 +40,12 @@
                                     <div class="form-card">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h2 class="fs-title text-center">Alternate Match Value Table</h2>
+                                                <h2 class="fs-title text-center">Tabel Nilai Alternatif yang Cocok</h2>
                                             </div>
                                         </div>
                                         <div class="row row justify-content-center">
                                             <div class="col-10">
-                                                <p class="text-center">This table will show the final score for each job alternative that is tested using criteria determined by the user, indicating how well each alternative matches the criteria.</p>
+                                                <p class="text-center">Tabel ini akan menampilkan skor akhir untuk setiap alternatif pekerjaan yang diuji menggunakan kriteria yang ditentukan oleh pengguna, menunjukkan seberapa baik setiap alternatif cocok dengan kriteria tersebut.</p>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
@@ -98,17 +98,17 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <h2 class="fs-title text-center mt-3">Normalizing(<span style="font-family: 'Times New Roman';">𝑁</span>)</h2>
+                                                        <h2 class="fs-title text-center mt-3">Normalisasi(<span style="font-family: 'Times New Roman';">𝑁</span>)</h2>
                                                     </div>
                                                 </div>
                                                 <div class="row row justify-content-center">
                                                     <div class="col-12">
-                                                        <p class="text-center">In the PSI method within DSS, normalization is used to transform values of each criterion into relative values from the same value range, in order to make them objectively comparable. Before performing normalization using the PSI method, the first step is to find the maximum (max) and minimum (min) values of each criterion for all alternatives in the DSS.</p>
+                                                        <p class="text-center">Dalam metode PSI dalam DSS, normalisasi digunakan untuk mengubah nilai dari setiap kriteria menjadi nilai relatif dari rentang nilai yang sama, agar dapat dibandingkan secara objektif. Sebelum melakukan normalisasi menggunakan metode PSI, langkah pertama adalah menemukan nilai maksimum (max) dan minimum (min) dari setiap kriteria untuk semua alternatif dalam DSS.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <h2 class="fs-title text-center mt-2">Max & Min</h2>
+                                                        <h2 class="fs-title text-center mt-2">Maks & Min</h2>
                                                     </div>
                                                 </div>
                                                 <table class="table table-bordered text-center">
@@ -125,7 +125,7 @@
                                                     <tbody>
                                                         @foreach ($maxmin as $maxmin)
                                                         <tr>
-                                                            <td>Max</td>
+                                                            <td>Maks</td>
                                                             <td>{{ $maxmin -> max1 }}</td>
                                                             <td>{{ $maxmin -> max2 }}</td>
                                                             <td>{{ $maxmin -> max3 }}</td>
@@ -151,12 +151,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-2">Normalization</h2>
+                                            <h2 class="fs-title text-center mt-2">Normalisasi</h2>
                                         </div>
                                     </div>
                                     <div class="row row justify-content-center">
                                         <div class="col-10">
-                                            <p class="text-center">Criteria that have increasing values and a positive impact on users or job applicants, such as Salary, Company Benefits, Health Facilities, Transportation, and Working Environment can be considered as benefits. On the other hand, criteria that have increasing values and a negative impact on users or job applicants, such as Distance, Language Skills, Work Experience, Working Hours, and Geographical Factor can be considered as costs.</p>
+                                            <p class="text-center">Kriteria yang memiliki nilai yang meningkat dan berdampak positif pada pengguna atau pelamar pekerjaan, seperti Gaji, Manfaat Perusahaan, Fasilitas Kesehatan, Transportasi, dan Lingkungan Kerja, dapat dianggap sebagai benefit. Di sisi lain, kriteria yang memiliki nilai yang meningkat dan berdampak negatif pada pengguna atau pelamar pekerjaan, seperti Jarak, Kemampuan Berbahasa, Pengalaman Kerja, Jam Kerja, dan Faktor Geografis, dapat dianggap sebagai cost.</p>
                                         </div>
                                     </div>
                                     <div style="font-size: 13px; color: grey;">
@@ -205,12 +205,12 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-2">Example</h2>
+                                                    <h2 class="fs-title text-center mt-2">Contoh</h2>
                                                 </div>
                                             </div>
                                             <div class="row row justify-content-center">
                                                 <div class="col-12">
-                                                    <p class="text-center">Here is an example of benefit and cost calculation for Criteria 1 and Criteria 2, where Criteria 1 is a benefit and Criteria 2 is a cost. The following table shows the calculation steps :</p>
+                                                    <p class="text-center">Berikut adalah contoh perhitungan keuntungan dan biaya untuk Kriteria 1 dan Kriteria 2, di mana Kriteria 1 adalah keuntungan dan Kriteria 2 adalah biaya. Tabel berikut menunjukkan langkah-langkah perhitungan :</p>
                                                 </div>
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
@@ -226,8 +226,8 @@
                                             <table class="table table-bordered text-center">
                                                 <thead class="">
                                                     <tr>
-                                                        <th>C1 Calculation (Benefit)</th>
-                                                        <th>C2 Calculation (Cost)</th>
+                                                        <th>Perhitungan C1 (Benefit)</th>
+                                                        <th>Perhitungan C2 (Cost)</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="table-body2">
@@ -280,17 +280,17 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Calculating The Mean</h2>
+                                            <h2 class="fs-title text-center mt-3">Menghitung Rata-Rata</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-10">
-                                            <p class="text-center">To calculate the average for each criterion across all alternatives, you need to first calculate the sum of the normalized values for each criterion across all alternatives. Then, divide the sum of normalized values for each criterion by the total number of alternatives. The result of this division is the average value for each criterion across all alternatives.</p>
+                                            <p class="text-center">Untuk menghitung rata-rata untuk setiap kriteria di semua alternatif, Anda perlu pertama-tama menghitung jumlah dari nilai-nilai yang dinormalisasi untuk setiap kriteria di semua alternatif. Kemudian, bagi jumlah nilai yang dinormalisasi untuk setiap kriteria dengan total jumlah alternatif. Hasil dari pembagian ini adalah nilai rata-rata untuk setiap kriteria di semua alternatif.</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-2">Total Per Criteria 1</h2>
+                                            <h2 class="fs-title text-center mt-2">Total Per Kriteria 1</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -324,7 +324,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Calculating</h2>
+                                            <h2 class="fs-title text-center mt-3">Perhitungan</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -355,7 +355,7 @@
                                             </table>
                                             <div class="row justify-content-center">
                                                 <div class="col-12 mb-2">
-                                                    <p class="text-center">The formula to calculate the average of the Preference Selection Index (PSI) after normalization is by adding up the PSI values of each criteria, then dividing it by the total number of alternatives.</p>
+                                                    <p class="text-center">Rumus untuk menghitung rata-rata Indeks Pemilihan Preferensi (PSI) setelah normalisasi adalah dengan menjumlahkan nilai PSI dari setiap kriteria, kemudian membaginya dengan total jumlah alternatif.</p>
                                                 </div>
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
@@ -377,12 +377,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Determining The Value of Preference Variation(∅)</h2>
+                                            <h2 class="fs-title text-center mt-3">Menentukan Nilai Variasi Preferensi (∅)</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-10">
-                                            <p class="text-center">Calculating the value of preference variation can be done by summing the multiplication of each element in a row of a normalized matrix with the corresponding preference weight in the column of the matrix.</p>
+                                            <p class="text-center">Menghitung nilai variasi preferensi dapat dilakukan dengan menjumlahkan perkalian setiap elemen dalam baris matriks yang dinormalisasi dengan bobot preferensi yang sesuai dalam kolom matriks.</p>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -441,17 +441,17 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Specifying The Value in Preferences(𝛺)</h2>
+                                            <h2 class="fs-title text-center mt-3">Menentukan Nilai dalam Preferensi(𝛺)</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-10">
-                                            <p class="text-center">Sum each column in the matrix Ωj is reduced by 1 according to the number of columns present. After that, sum the calculation results in each column of matrix Ω𝑗.</p>
+                                            <p class="text-center">Jumlahkan setiap kolom dalam matriks Ω𝑗 dikurangi 1 sesuai dengan jumlah kolom yang ada. Setelah itu, jumlahkan hasil perhitungan di setiap kolom matriks Ω𝑗.</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-2">Total Per Criteria 2</h2>
+                                            <h2 class="fs-title text-center mt-2">Total Per Kriteria 2</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -485,7 +485,7 @@
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-2">Calculating</h2>
+                                            <h2 class="fs-title text-center mt-2">Perhitungan</h2>
                                         </div>
                                         <div class="col-10">
                                             <table class="table table-bordered text-center">
@@ -534,10 +534,10 @@
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Determine The Weight Criteria(<span style="font-style: italic">W<span>)</h2>
+                                            <h2 class="fs-title text-center mt-3">Menentukan Bobot Kriteria(<span style="font-style: italic">W<span>)</h2>
                                             </div>
                                             <div class="col-10">
-                                                <p>In determining the weight criteria, the next step is to divide the sum of each column in the Ωj matrix by the total number of columns ∑ Ω𝑗. The result of this division will produce weights for each criterion. These weights will be used to multiply the value of each alternative on each criterion in the next step, namely the calculation of preference values for each alternative. The larger the weight of a criterion, the greater its influence in determining the best alternative.</p>
+                                                <p>Untuk menentukan bobot kriteria, langkah berikutnya adalah membagi jumlah setiap kolom dalam matriks Ωj dengan jumlah total kolom ∑ Ω𝑗. Hasil pembagian ini akan menghasilkan bobot untuk setiap kriteria. Bobot ini akan digunakan untuk mengalikan nilai setiap alternatif pada setiap kriteria dalam langkah berikutnya, yaitu perhitungan nilai preferensi untuk setiap alternatif. Semakin besar bobot suatu kriteria, semakin besar pengaruhnya dalam menentukan alternatif terbaik.</p>
                                             </div>
                                             <div class="col-10">
                                                 <table class="table table-bordered text-center">
@@ -584,10 +584,10 @@
                                         </div>
                                         <div class="row justify-content-center mt-1">
                                             <div class="col-12">
-                                                <h2 class="fs-title text-center mt-3">Count PSI(<span style="font-style: italic">∅<span>)</h2>
+                                                <h2 class="fs-title text-center mt-3">Menghitung PSI(<span style="font-style: italic">∅<span>)</h2>
                                                 </div>
                                                 <div class="col-10">
-                                                    <p>Determining the preference selection index, where the normalized matrix Xij is multiplied by the result of 𝜔𝑗. After the multiplication is successful, the next step is to sum each row in the matrix 𝜃𝑖. The sum of each row in the θi matrix is the final result that determines the ranking of alternatives, and the alternative with the highest preference index value is the best alternative.</p>
+                                                    <p>Penentuan Preference Selection Index (PSI), di mana matriks ter-normalisasi Xij dikalikan dengan hasil dari 𝜔𝑗. Setelah perkalian berhasil, langkah berikutnya adalah menjumlahkan setiap baris dalam matriks 𝜃𝑖. Jumlah dari setiap baris dalam matriks 𝜃𝑖 merupakan hasil akhir yang menentukan peringkat alternatif, dan alternatif dengan nilai indeks preferensi tertinggi adalah alternatif terbaik.</p>
                                                     <table class="table table-bordered text-center">
                                                         <thead class="">
                                                             <tr>
@@ -621,7 +621,7 @@
                                                         tableBody4.appendChild(tr);
                                                         tableBody4.appendChild(tr);
                                                     </script>
-                                                    <p>The formula calculates the value of an alternative i in a multi-criteria decision-making system using the Weighted Sum Model. The formula sums up the products of the preference values Xij of alternative i on criterion j and the weight Wj of criterion j. The process is repeated for all criteria, resulting in the total preference value θi for alternative i.</p>
+                                                    <p>Rumus menghitung nilai alternatif i dalam sistem pengambilan keputusan multikriteria menggunakan Weighted Sum Model. Rumus ini menjumlahkan produk dari nilai preferensi Xij dari alternatif i pada kriteria j dan bobot Wj dari kriteria j. Proses ini diulang untuk semua kriteria, menghasilkan nilai preferensi total θi untuk alternatif i.</p>
                                                     <p>∅i = ∑(Xij * Wj) j=1 to m</p>
                                                     @foreach ($psijoin as $psijoin)
                                                     <div style="font-size: 13px; color: grey;">
@@ -636,7 +636,7 @@
                                                     @endforeach
                                                 </div>
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-3">Ranking</h2>
+                                                    <h2 class="fs-title text-center mt-3">Peringkat</h2>
                                                 </div>
                                                 <div class="col-4">
                                                     <table class="table table-bordered text-center">
@@ -644,7 +644,7 @@
                                                             <tr>
                                                                 <th>No</th>
                                                                 <th >Alternatif</th>
-                                                                <th >Ranking Value</th>
+                                                                <th >Nilai Peringkat</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody id="table-body5">
@@ -666,12 +666,12 @@
                                                     </table>
                                                 </div>
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-3">Summary</h2>
+                                                    <h2 class="fs-title text-center mt-3">Ringkasan</h2>
                                                 </div>
                                                 <div class="col-10">
-                                                    <p>The PSI method was used to evaluate various options and determine the most suitable one based on the user's needs and preferences. Option <span style="color: #fb6340;">{{ $highestRanking->tabel }}</span>  had the highest PSI value of <span style="color: #fb6340;">{{ $highestRanking->rank }}</span>, indicating that it was the most recommended option. This conclusion was based on a careful analysis of the data and consideration of various factors, making it the best choice for the user to achieve their desired outcome. If you're unsure about how the algorithm works, please visit the <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page for more information.</p></p>
-                                                    <button class="buttonCustom" style="margin-left: 40px" onclick="location.href='/psi';">Discover More Cases?</button>
-                                                    <button class="buttonCustom" onclick="location.href='/';">Take Me Home</button>
+                                                    <p>Metode PSI digunakan untuk mengevaluasi berbagai opsi dan menentukan yang paling sesuai berdasarkan kebutuhan dan preferensi pengguna. Pilihan <span style="color: #fb6340;">{{ $highestRanking->tabel }}</span> memiliki nilai PSI tertinggi yaitu <span style="color: #fb6340;">{{ $highestRanking->rank }}</span>, menunjukkan bahwa itu merupakan pilihan yang paling direkomendasikan. Kesimpulan ini didasarkan pada analisis data yang hati-hati dan pertimbangan berbagai faktor, menjadikannya pilihan terbaik untuk pengguna mencapai hasil yang diinginkan.</p></p>
+                                                    <button class="buttonCustom" style="margin-left: 40px" onclick="location.href='/psi';">Temukan Lebih Banyak Kasus?</button>
+                                                    <button class="buttonCustom" onclick="location.href='/';">Bawa Saya ke Halaman Utama</button>
                                                 </div>
                                             </div>
                                         </div>
