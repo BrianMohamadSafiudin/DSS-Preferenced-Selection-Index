@@ -123,12 +123,12 @@
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Criteria Score:</h2>
+                                                    <h2 class="fs-title">Skor Kriteria :</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p style="font-size: 13px">Please enter the criteria scores for each alternative previously entered. These scores reflect the importance or preference for each criterion in the decision-making process. Fill in all available criteria, namely :</p>
+                                                    <p style="font-size: 13px">Silakan masukkan skor kriteria untuk setiap alternatif yang dimasukkan sebelumnya. Skor ini mencerminkan pentingnya atau preferensi setiap kriteria dalam proses pengambilan keputusan. Isi semua kriteria yang tersedia yaitu :</p>
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
                                                         <div style="flex-basis: 50%;">
                                                             <ul>
@@ -168,7 +168,7 @@
                                                         td1.className = 'text-center';
                                                         td1.style.paddingTop = '18px';
                                                         const p = document.createElement('p');
-                                                        p.textContent = `Alternative ${i+1}`;
+                                                        p.textContent = `Alternatif ${i+1}`;
                                                         td1.appendChild(p);
                                                         tr.appendChild(td1);
                                                         for (let j = 0; j < colCount; j++) {
@@ -211,7 +211,7 @@
                                             });
                                             submitButton.style.display = 'none';
                                         </script>
-                                        <input type="button" id="previousButton2" name="previous" class="previous action-button-previous" value="Previous"/>
+                                        <input type="button" id="previousButton2" name="previous" class="previous action-button-previous" value="Back"/>
                                     </fieldset>
                                 </form>
                             </div>
