@@ -33,7 +33,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Career Preferences Selection</h2>
+                            <h2 id="heading">PEMILIHAN PREFERENSI</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
                                     <p>To proceed to the next step, please ensure that you have completed all the required fields. Don't worry if you're unsure about how the algorithm works, you can visit our "How It Works" page for a comprehensive guide.
