@@ -34,34 +34,34 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Preferences Selection</h2>
+                            <h2 id="heading">PEMILIHAN PREFERENSI</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <p>To proceed to the next step, please ensure that you have completed all the required fields. Don't worry if you're unsure about how the algorithm works, you can visit our "How It Works" page for a comprehensive guide.
+                                    <p>Untuk melanjutkan ke langkah berikutnya, pastikan Anda telah melengkapi semua kolom yang diperlukan. Jika tidak yakin tentang cara kerja algoritma, Anda dapat mengunjungi halaman "Cara Kerja" untuk panduan komprehensif.
 
-                                        Our <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page provides a step-by-step breakdown of the algorithm, so you can get a better understanding of how it operates. We believe that transparency is key, and we want to ensure that you have all the information you need to make informed decisions.
+                                        <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">Cara Kerja</a> ini memberikan perincian algoritma langkah demi langkah, sehingga Anda bisa mendapatkan pemahaman yang lebih baik tentang cara kerjanya. Kami percaya bahwa transparansi adalah kuncinya, dan kami ingin memastikan bahwa Anda memiliki semua informasi yang Anda perlukan untuk membuat keputusan yang tepat. 
 
-                                        Thank you for choosing our platform, and we hope you find our service helpful and user-friendly.</p>
+                                        Terima kasih telah memilih platform kami, dan kami berharap layanan kami bermanfaat dan ramah pengguna.</p>
                                     </div>
                                 </div>
                                 <form method="POST" action="{{ route('cases.store') }}" id="msform">
                                     @csrf
                                     <!-- progressbar -->
                                     <ul id="progressbar">
-                                        <li class="active" id="account"><strong>Alternative</strong></li>
-                                        <li id="personal"><strong>Criteria</strong></li>
-                                        <li id="confirm"><strong>Finish</strong></li>
+                                        <li class="active" id="account"><strong>Alternatif</strong></li>
+                                        <li id="personal"><strong>Kriteria</strong></li>
+                                        <li id="confirm"><strong>Selesai</strong></li>
                                     </ul> <!-- fieldsets -->
                                     <fieldset>
                                         <div class="form-card" id="alternative-container">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Alternatives :</h2>
+                                                    <h2 class="fs-title">Alternatif :</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p style="font-size: 13px">Please enter the choices that you have obtained in this form to continue the process. <a style="text-decoration: none; color: #fb6340;" href="/csv">Using CSV?</a></p>
+                                                    <p style="font-size: 13px">Silakan masukkan pilihan yang telah Anda peroleh pada formulir ini untuk melanjutkan proses. <a style="text-decoration: none; color: #fb6340;" href="/csv">Gunakan CSV?</a></p>
                                                 </div>
                                             </div>
                                             <script>
@@ -70,7 +70,7 @@
 
                                                 for (let i = 1; i <= alternativeCount; i++) {
                                                     const label = document.createElement('label');
-                                                    label.textContent = `Alternative ${i} : *`;
+                                                    label.textContent = `Alternatif ${i} : *`;
                                                     label.className = 'fieldlabels';
 
                                                     const input = document.createElement('input');
@@ -78,7 +78,7 @@
                                                     input.className = 'mb-3';
                                                     input.id = `alternative${i}`;
                                                     input.name = `alternative${i}`;
-                                                    input.placeholder = `Alternative ${i}`;
+                                                    input.placeholder = `Alternatif ${i}`;
                                                     input.required = true;
 
                                                     alternativeContainer.appendChild(label);
@@ -123,12 +123,12 @@
                                         <div class="form-card">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="fs-title">Criteria Score:</h2>
+                                                    <h2 class="fs-title">Skor Kriteria :</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <p style="font-size: 13px">Please enter the criteria scores for each alternative previously entered. These scores reflect the importance or preference for each criterion in the decision-making process. Fill in all available criteria, namely :</p>
+                                                    <p style="font-size: 13px">Silakan masukkan skor kriteria untuk setiap alternatif yang dimasukkan sebelumnya. Skor ini mencerminkan pentingnya atau preferensi setiap kriteria dalam proses pengambilan keputusan. Isi semua kriteria yang tersedia yaitu :</p>
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
                                                         <div style="flex-basis: 50%;">
                                                             <ul>
@@ -168,7 +168,7 @@
                                                         td1.className = 'text-center';
                                                         td1.style.paddingTop = '18px';
                                                         const p = document.createElement('p');
-                                                        p.textContent = `Alternative ${i+1}`;
+                                                        p.textContent = `Alternatif ${i+1}`;
                                                         td1.appendChild(p);
                                                         tr.appendChild(td1);
                                                         for (let j = 0; j < colCount; j++) {
@@ -211,7 +211,7 @@
                                             });
                                             submitButton.style.display = 'none';
                                         </script>
-                                        <input type="button" id="previousButton2" name="previous" class="previous action-button-previous" value="Previous"/>
+                                        <input type="button" id="previousButton2" name="previous" class="previous action-button-previous" value="Back"/>
                                     </fieldset>
                                 </form>
                             </div>

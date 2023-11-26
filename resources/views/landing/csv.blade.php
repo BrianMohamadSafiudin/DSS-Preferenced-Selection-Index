@@ -34,12 +34,12 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Career Preferences Selection</h2>
+                            <h2 id="heading">PEMILIHAN PREFERENSI</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <p>To proceed to the next step, please ensure that you have completed all the required fields. Don't worry if you're unsure about how the algorithm works, you can visit our "How It Works" page for a comprehensive guide.
+                                    <p>Untuk melanjutkan ke langkah berikutnya, pastikan Anda telah melengkapi semua kolom yang diperlukan. Jika Anda tidak yakin tentang cara kerja algoritma, Anda dapat mengunjungi halaman "Cara Kerja" untuk panduan komprehensif.
                                         
-                                        Our <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">how it work</a> page provides a step-by-step breakdown of the algorithm, so you can get a better understanding of how it operates. We believe that transparency is key, and we want to ensure that you have all the information you need to make informed decisions.
+                                         <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">Cara kerja</a> ini memberikan perincian algoritma langkah demi langkah, sehingga Anda dapat lebih memahami cara kerjanya. Kami percaya bahwa transparansi adalah kuncinya, dan kami ingin memastikan bahwa Anda memiliki semua informasi yang Anda perlukan untuk membuat keputusan yang tepat.
                                         
                                         Thank you for choosing our platform, and we hope you find our service helpful and user-friendly.</p>
                                     </div>
