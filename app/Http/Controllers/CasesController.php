@@ -156,7 +156,7 @@ class CasesController extends Controller
         for ($i = 1; $i <= 10; $i++) {
             $columnName = 'a'.$i.'c1';
             $temp = DB::table('cases')->where('cases_id', $primarykey)->value($columnName);
-            $n1['na'.$i.'c1'] = $temp / $maxValues[1];
+            $n1['na'.$i.'c1'] = $minValues[1]/ $temp;
             $columnName = 'a'.$i.'c2';
             $temp = DB::table('cases')->where('cases_id', $primarykey)->value($columnName);
             $n2['na'.$i.'c2'] = $minValues[2] / $temp;
@@ -165,7 +165,7 @@ class CasesController extends Controller
             $n3['na'.$i.'c3'] = $temp / $maxValues[3];
             $columnName = 'a'.$i.'c4';
             $temp = DB::table('cases')->where('cases_id', $primarykey)->value($columnName);
-            $n4['na'.$i.'c4'] = $minValues[4] / $temp;
+            $n4['na'.$i.'c4'] = $temp / $maxValues[4];
             $columnName = 'a'.$i.'c5';
             $temp = DB::table('cases')->where('cases_id', $primarykey)->value($columnName);
             $n5['na'.$i.'c5'] = $temp / $maxValues[5];
