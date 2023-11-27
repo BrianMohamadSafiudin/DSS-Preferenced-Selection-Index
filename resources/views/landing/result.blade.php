@@ -29,10 +29,10 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center mt-3 mb-2">
                         <div class="card px-0 pt-4 pb-3 mt-3 mb-3" style="border-radius: 20px">
-                            <h2 id="heading">Hasil Sistem Pendukung Keputusan Preferensi Karir</h2>
+                            <h2 id="heading">Hasil Sistem Pendukung Keputusan Preferensi</h2>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <p>Halaman ini menampilkan Preference Selection Index (PSI), yang menunjukkan seberapa cocok suatu pekerjaan dengan kemampuan, minat, dan pengalaman seseorang. Semakin tinggi nilai PSI, semakin cocok pekerjaan tersebut dengan keterampilan dan minat seseorang. Dengan menggunakan PSIwizard, Anda dapat menemukan karir yang paling cocok untuk Anda. Temukan karir yang Anda inginkan sekarang dengan menggunakan PSIwizard. Jika Anda ragu tentang bagaimana algoritma ini bekerja, silakan kunjungi halaman <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">bagaimana cara kerjanya</a> untuk informasi lebih lanjut.</p>
+                                    <p>Halaman ini menampilkan Preference Selection Index (PSI), Semakin tinggi nilai PSI, semakin cocok pilihan yang di rekomendasikan. Jika Anda ragu tentang bagaimana algoritma ini bekerja, silakan kunjungi halaman <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">bagaimana cara kerjanya</a> untuk informasi lebih lanjut.</p>
                                 </div>
                             </div>
                             <div id="msform">
@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="row row justify-content-center">
                                             <div class="col-10">
-                                                <p class="text-center">Tabel ini akan menampilkan skor akhir untuk setiap alternatif pekerjaan yang diuji menggunakan kriteria yang ditentukan oleh pengguna, menunjukkan seberapa baik setiap alternatif cocok dengan kriteria tersebut.</p>
+                                                <p class="text-center">Tabel ini akan menampilkan skor akhir untuk setiap alternatif yang diuji menggunakan kriteria yang ditentukan oleh pengguna, menunjukkan seberapa baik setiap alternatif cocok dengan kriteria tersebut.</p>
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
@@ -156,7 +156,7 @@
                                     </div>
                                     <div class="row row justify-content-center">
                                         <div class="col-10">
-                                            <p class="text-center">Kriteria yang memiliki nilai yang meningkat dan berdampak positif pada pengguna atau pelamar pekerjaan, seperti Gaji, Manfaat Perusahaan, Fasilitas Kesehatan, Transportasi, dan Lingkungan Kerja, dapat dianggap sebagai benefit. Di sisi lain, kriteria yang memiliki nilai yang meningkat dan berdampak negatif pada pengguna atau pelamar pekerjaan, seperti Jarak, Kemampuan Berbahasa, Pengalaman Kerja, Jam Kerja, dan Faktor Geografis, dapat dianggap sebagai cost.</p>
+                                            <p class="text-center">Kriteria yang memiliki nilai yang meningkat dan berdampak positif pada pengguna dapat dianggap sebagai benefit. Di sisi lain, kriteria yang memiliki nilai yang meningkat dan berdampak negatif pada pengguna dapat dianggap sebagai cost.</p>
                                         </div>
                                     </div>
                                     <div style="font-size: 13px; color: grey;">
