@@ -215,61 +215,61 @@
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
                                                 <div style="display: inline-block; width: 49%;">
-                                                    <p>Benefit</p>
-                                                    <p>𝑁ij = 𝑋ij / 𝑋jmax </p>
-                                                </div>
-                                                <div style="display: inline-block; width: 49%;">
                                                     <p>Cost</p>
                                                     <p>𝑁ij = 𝑋jmin / 𝑋ij </p>
+                                                </div>
+                                                <div style="display: inline-block; width: 49%;">
+                                                    <p>Benefit</p>
+                                                    <p>𝑁ij = 𝑋ij / 𝑋jmax </p>
                                                 </div>
                                             </div>
                                             <table class="table table-bordered text-center">
                                                 <thead class="">
                                                     <tr>
-                                                        <th>Perhitungan C1 (Benefit)</th>
                                                         <th>Perhitungan C2 (Cost)</th>
+                                                        <th>Perhitungan C3 (Benefit)</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="table-body2">
                                                     @foreach ($join as $join)
                                                     <tr>
                                                         <td>
-                                                            <p>𝑁11 = {{ $join -> a1c1 }} / {{ $join -> max1 }} = {{ $join -> na1c1 }}</p>
+                                                            <p>𝑁12 = {{ $join -> min2 }} /  {{ $join -> a1c2 }} = {{ $join -> na1c2 }}</p>
                                                         </td>
                                                         <td>
-                                                            <p>𝑁12 = {{ $join -> min2 }} /  {{ $join -> a1c2 }} = {{ $join -> na1c2 }}</p>
+                                                            <p>𝑁13 = {{ $join -> a1c3 }} / {{ $join -> max3 }} = {{ $join -> na1c3 }}</p>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>
-                                                            <p>𝑁21 = {{ $join -> a2c1 }} / {{ $join -> max1 }} = {{ $join -> na2c1 }}</p>
-                                                        </td>
                                                         <td>
                                                             <p>𝑁22 = {{ $join -> min2 }} /  {{ $join -> a2c2 }} = {{ $join -> na2c2 }}</p>
                                                         </td>
+                                                        <td>
+                                                            <p>𝑁23 = {{ $join -> a2c3 }} / {{ $join -> max3 }} = {{ $join -> na2c3 }}</p>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>
-                                                            <p>𝑁31 = {{ $join -> a3c1 }} / {{ $join -> max1 }} = {{ $join -> na3c1 }}</p>
-                                                        </td>
                                                         <td>
                                                             <p>𝑁32 = {{ $join -> min2 }} /  {{ $join -> a3c2 }} = {{ $join -> na3c2 }}</p>
                                                         </td>
+                                                        <td>
+                                                            <p>𝑁33 = {{ $join -> a3c3 }} / {{ $join -> max3 }} = {{ $join -> na3c3 }}</p>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>
-                                                            <p>𝑁41 = {{ $join -> a4c1 }} / {{ $join -> max1 }} = {{ $join -> na4c1 }}</p>
-                                                        </td>
                                                         <td>
                                                             <p>𝑁42 = {{ $join -> min2 }} /  {{ $join -> a4c2 }} = {{ $join -> na4c2 }}</p>
                                                         </td>
+                                                        <td>
+                                                            <p>𝑁43 = {{ $join -> a4c3 }} / {{ $join -> max3 }} = {{ $join -> na4c3 }}</p>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <p>𝑁51 = {{ $join -> a5c1 }} / {{ $join -> max1 }} = {{ $join -> na5c1 }}</p>
+                                                            <p>𝑁52 = {{ $join -> min2 }} /  {{ $join -> a5c2 }} = {{ $join -> na5c2 }}</p>
                                                         </td>
                                                         <td>
-                                                            <p>𝑁52 = {{ $join -> min2 }} /  {{ $join -> a5c2 }} = {{ $join -> na5c2 }}</p>
+                                                            <p>𝑁53 = {{ $join -> a5c3 }} / {{ $join -> max3 }} = {{ $join -> na5c3 }}</p>
                                                         </td>
                                                     </tr>
                                                     <tr><td></td></tr>
