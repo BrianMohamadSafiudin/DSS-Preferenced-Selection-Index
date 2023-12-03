@@ -17,12 +17,12 @@ return new class extends Migration
             $table->bigIncrements('ranking_id')->unique();
             $table->unsignedBigInteger('cases_id');
             $table->foreign('cases_id')->references('cases_id')->on('cases')->onDelete('CASCADE');
-            $table->float('rank',10,6)->default(0);
+            $table->float('rank',8,6)->default(0);
             $table->string('tabel')->default(0);
             $table->timestamps();
         });
     }
-    
+
     /**
     * Reverse the migrations.
     *

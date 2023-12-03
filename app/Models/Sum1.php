@@ -19,7 +19,5 @@ class Sum1 extends Model
         'm6',
         'm7',
         'm8',
-        'm9',
-        'm10',
     ];
 }
