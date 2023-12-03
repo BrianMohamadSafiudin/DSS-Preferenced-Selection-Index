@@ -60,14 +60,19 @@
                                                                 <th >C3</th>
                                                                 <th >C4</th>
                                                                 <th >C5</th>
+                                                                <th >C6</th>
+                                                                <th >C7</th>
+                                                                <th >C8</th>
+                                                                <th >C9</th>
+                                                                <th >C10</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody id="table-body">
                                                         </tbody>
                                                     </table>
                                                     <script>
-                                                        const rowCount = 11;
-                                                        const colCount = 5;
+                                                        const rowCount = 21;
+                                                        const colCount = 10;
                                                         const tableBody = document.querySelector('#table-body');
                                                         const cases = @json($cases);
                                                         console.log(cases)
@@ -108,7 +113,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <h2 class="fs-title text-center mt-2">Maks & Min</h2>
+                                                        <h2 class="fs-title text-center mt-2">Max & Min</h2>
                                                     </div>
                                                 </div>
                                                 <table class="table table-bordered text-center">
@@ -120,17 +125,27 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
+                                                            <th >C6</th>
+                                                            <th >C7</th>
+                                                            <th >C8</th>
+                                                            <th >C9</th>
+                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         @foreach ($maxmin as $maxmin)
                                                         <tr>
-                                                            <td>Maks</td>
+                                                            <td>Max</td>
                                                             <td>{{ $maxmin -> max1 }}</td>
                                                             <td>{{ $maxmin -> max2 }}</td>
                                                             <td>{{ $maxmin -> max3 }}</td>
                                                             <td>{{ $maxmin -> max4 }}</td>
                                                             <td>{{ $maxmin -> max5 }}</td>
+                                                            <td>{{ $maxmin -> max6 }}</td>
+                                                            <td>{{ $maxmin -> max7 }}</td>
+                                                            <td>{{ $maxmin -> max8 }}</td>
+                                                            <td>{{ $maxmin -> max9 }}</td>
+                                                            <td>{{ $maxmin -> max10 }}</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Min</td>
@@ -139,6 +154,11 @@
                                                             <td>{{ $maxmin -> min3 }}</td>
                                                             <td>{{ $maxmin -> min4 }}</td>
                                                             <td>{{ $maxmin -> min5 }}</td>
+                                                            <td>{{ $maxmin -> min6 }}</td>
+                                                            <td>{{ $maxmin -> min7 }}</td>
+                                                            <td>{{ $maxmin -> min8 }}</td>
+                                                            <td>{{ $maxmin -> min9 }}</td>
+                                                            <td>{{ $maxmin -> min10 }}</td>
                                                         </tr>
                                                         @endforeach
                                                         <tr>
@@ -180,6 +200,11 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
+                                                            <th >C6</th>
+                                                            <th >C7</th>
+                                                            <th >C8</th>
+                                                            <th >C9</th>
+                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body1">
@@ -189,9 +214,9 @@
                                                     const tableBody2 = document.querySelector('#table-body1');
                                                     const normalisasi = @json($normalisasi);
 
-                                                    for (let i = 0; i < 11; i++) {
+                                                    for (let i = 0; i < 21; i++) {
                                                         const tr = document.createElement('tr');
-                                                        for (let j = 0; j < 5; j++) {
+                                                        for (let j = 0; j < 10; j++) {
                                                             const td = document.createElement('td');
                                                             const p = document.createElement('p');
                                                             p.textContent = normalisasi[0]['na'+(i+1)+'c'+(j+1)];
@@ -205,7 +230,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-2">Contoh</h2>
+                                                    <h2 class="fs-title text-center mt-2">Example</h2>
                                                 </div>
                                             </div>
                                             <div class="row row justify-content-center">
@@ -215,61 +240,61 @@
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
                                                 <div style="display: inline-block; width: 49%;">
-                                                    <p>Cost</p>
-                                                    <p>𝑁ij = 𝑋jmin / 𝑋ij </p>
-                                                </div>
-                                                <div style="display: inline-block; width: 49%;">
                                                     <p>Benefit</p>
                                                     <p>𝑁ij = 𝑋ij / 𝑋jmax </p>
+                                                </div>
+                                                <div style="display: inline-block; width: 49%;">
+                                                    <p>Cost</p>
+                                                    <p>𝑁ij = 𝑋jmin / 𝑋ij </p>
                                                 </div>
                                             </div>
                                             <table class="table table-bordered text-center">
                                                 <thead class="">
                                                     <tr>
+                                                        <th>Perhitungan C1 (Benefit)</th>
                                                         <th>Perhitungan C2 (Cost)</th>
-                                                        <th>Perhitungan C3 (Benefit)</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="table-body2">
                                                     @foreach ($join as $join)
                                                     <tr>
                                                         <td>
-                                                            <p>𝑁12 = {{ $join -> min2 }} /  {{ $join -> a1c2 }} = {{ $join -> na1c2 }}</p>
+                                                            <p>𝑁11 = {{ $join -> a1c1 }} / {{ $join -> max1 }} = {{ $join -> na1c1 }}</p>
                                                         </td>
                                                         <td>
-                                                            <p>𝑁13 = {{ $join -> a1c3 }} / {{ $join -> max3 }} = {{ $join -> na1c3 }}</p>
+                                                            <p>𝑁12 = {{ $join -> min2 }} /  {{ $join -> a1c2 }} = {{ $join -> na1c2 }}</p>
                                                         </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>
+                                                            <p>𝑁21 = {{ $join -> a2c1 }} / {{ $join -> max1 }} = {{ $join -> na2c1 }}</p>
+                                                        </td>
                                                         <td>
                                                             <p>𝑁22 = {{ $join -> min2 }} /  {{ $join -> a2c2 }} = {{ $join -> na2c2 }}</p>
                                                         </td>
-                                                        <td>
-                                                            <p>𝑁23 = {{ $join -> a2c3 }} / {{ $join -> max3 }} = {{ $join -> na2c3 }}</p>
-                                                        </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>
+                                                            <p>𝑁31 = {{ $join -> a3c1 }} / {{ $join -> max1 }} = {{ $join -> na3c1 }}</p>
+                                                        </td>
                                                         <td>
                                                             <p>𝑁32 = {{ $join -> min2 }} /  {{ $join -> a3c2 }} = {{ $join -> na3c2 }}</p>
                                                         </td>
-                                                        <td>
-                                                            <p>𝑁33 = {{ $join -> a3c3 }} / {{ $join -> max3 }} = {{ $join -> na3c3 }}</p>
-                                                        </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>
+                                                            <p>𝑁41 = {{ $join -> a4c1 }} / {{ $join -> max1 }} = {{ $join -> na4c1 }}</p>
+                                                        </td>
                                                         <td>
                                                             <p>𝑁42 = {{ $join -> min2 }} /  {{ $join -> a4c2 }} = {{ $join -> na4c2 }}</p>
                                                         </td>
-                                                        <td>
-                                                            <p>𝑁43 = {{ $join -> a4c3 }} / {{ $join -> max3 }} = {{ $join -> na4c3 }}</p>
-                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <p>𝑁52 = {{ $join -> min2 }} /  {{ $join -> a5c2 }} = {{ $join -> na5c2 }}</p>
+                                                            <p>𝑁51 = {{ $join -> a5c1 }} / {{ $join -> max1 }} = {{ $join -> na5c1 }}</p>
                                                         </td>
                                                         <td>
-                                                            <p>𝑁53 = {{ $join -> a5c3 }} / {{ $join -> max3 }} = {{ $join -> na5c3 }}</p>
+                                                            <p>𝑁52 = {{ $join -> min2 }} /  {{ $join -> a5c2 }} = {{ $join -> na5c2 }}</p>
                                                         </td>
                                                     </tr>
                                                     <tr><td></td></tr>
@@ -280,7 +305,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h2 class="fs-title text-center mt-3">Menghitung Rata-Rata</h2>
+                                            <h2 class="fs-title text-center mt-3">Menghitung Mean / Rata-Rata</h2>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -303,6 +328,11 @@
                                                         <th >C3</th>
                                                         <th >C4</th>
                                                         <th >C5</th>
+                                                        <th >C6</th>
+                                                        <th >C7</th>
+                                                        <th >C8</th>
+                                                        <th >C9</th>
+                                                        <th >C10</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -313,6 +343,11 @@
                                                         <td>{{ $sum1 -> m3 }}</td>
                                                         <td>{{ $sum1 -> m4 }}</td>
                                                         <td>{{ $sum1 -> m5 }}</td>
+                                                        <td>{{ $sum1 -> m6 }}</td>
+                                                        <td>{{ $sum1 -> m7 }}</td>
+                                                        <td>{{ $sum1 -> m8 }}</td>
+                                                        <td>{{ $sum1 -> m9 }}</td>
+                                                        <td>{{ $sum1 -> m10 }}</td>
                                                     </tr>
                                                     @endforeach
                                                     <tr>
@@ -337,6 +372,11 @@
                                                         <th >C3</th>
                                                         <th >C4</th>
                                                         <th >C5</th>
+                                                        <th >C6</th>
+                                                        <th >C7</th>
+                                                        <th >C8</th>
+                                                        <th >C9</th>
+                                                        <th >C10</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -347,6 +387,11 @@
                                                         <td>{{ $mean -> mean3 }}</td>
                                                         <td>{{ $mean -> mean4 }}</td>
                                                         <td>{{ $mean -> mean5 }}</td>
+                                                        <td>{{ $mean -> mean6 }}</td>
+                                                        <td>{{ $mean -> mean7 }}</td>
+                                                        <td>{{ $mean -> mean8 }}</td>
+                                                        <td>{{ $mean -> mean9 }}</td>
+                                                        <td>{{ $mean -> mean10 }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td></td>
@@ -360,11 +405,18 @@
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
                                                 <div style="display: inline-block; width: 49%;">
-                                                    <p>𝑁 = {{ $mean->m1 }} / 10 = {{ $mean->mean1 }}</p>
-                                                    <p>𝑁 = {{ $mean->m2 }} / 10 = {{ $mean->mean2 }}</p>
-                                                    <p>𝑁 = {{ $mean->m3 }} / 10 = {{ $mean->mean3 }}</p>
-                                                    <p>𝑁 = {{ $mean->m4 }} / 10 = {{ $mean->mean4 }}</p>
-                                                    <p>𝑁 = {{ $mean->m5 }} / 10 = {{ $mean->mean5 }}</p>
+                                                    <p>𝑁 = {{ $mean->m1 }} / 20 = {{ $mean->mean1 }}</p>
+                                                    <p>𝑁 = {{ $mean->m2 }} / 20 = {{ $mean->mean2 }}</p>
+                                                    <p>𝑁 = {{ $mean->m3 }} / 20 = {{ $mean->mean3 }}</p>
+                                                    <p>𝑁 = {{ $mean->m4 }} / 20 = {{ $mean->mean4 }}</p>
+                                                    <p>𝑁 = {{ $mean->m5 }} / 20 = {{ $mean->mean5 }}</p>
+                                                </div>
+                                                <div style="display: inline-block; width: 49%;">
+                                                    <p>𝑁 = {{ $mean->m6 }} / 20 = {{ $mean->mean6 }}</p>
+                                                    <p>𝑁 = {{ $mean->m7 }} / 20 = {{ $mean->mean7 }}</p>
+                                                    <p>𝑁 = {{ $mean->m8 }} / 20 = {{ $mean->mean8 }}</p>
+                                                    <p>𝑁 = {{ $mean->m9 }} / 20 = {{ $mean->mean9 }}</p>
+                                                    <p>𝑁 = {{ $mean->m10 }} / 20 = {{ $mean->mean10 }}</p>
                                                 </div>
                                             </div>
                                             @endforeach
@@ -396,6 +448,11 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
+                                                            <th >C6</th>
+                                                            <th >C7</th>
+                                                            <th >C8</th>
+                                                            <th >C9</th>
+                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body3">
@@ -406,9 +463,9 @@
                                                     const determine = @json($determine);
                                                     console.log(determine)
 
-                                                    for (let i = 0; i < 11; i++) {
+                                                    for (let i = 0; i < 21; i++) {
                                                         const tr = document.createElement('tr');
-                                                        for (let j = 0; j < 5; j++) {
+                                                        for (let j = 0; j < 10; j++) {
                                                             const td = document.createElement('td');
                                                             const p = document.createElement('p');
                                                             p.textContent = determine[0]['∅a'+(i+1)+'c'+(j+1)];
@@ -431,6 +488,13 @@
                                             <p>∅31 = ({{ $item -> na3c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a3c1 }}</p>
                                             <p>∅41 = ({{ $item -> na4c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a4c1 }}</p>
                                             <p>∅51 = ({{ $item -> na5c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a5c1 }}</p>
+                                        </div>
+                                        <div style="display: inline-block; width: 49%;">
+                                            <p>∅61 = ({{ $item -> na6c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a6c1 }}</p>
+                                            <p>∅71 = ({{ $item -> na7c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a7c1 }}</p>
+                                            <p>∅81 = ({{ $item -> na8c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a8c1 }}</p>
+                                            <p>∅91 = ({{ $item -> na9c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a9c1 }}</p>
+                                            <p>∅101 = ({{ $item -> na10c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a10c1 }}</p>
                                         </div>
                                     </div>
                                     @endforeach
@@ -464,6 +528,11 @@
                                                         <th >C3</th>
                                                         <th >C4</th>
                                                         <th >C5</th>
+                                                        <th >C6</th>
+                                                        <th >C7</th>
+                                                        <th >C8</th>
+                                                        <th >C9</th>
+                                                        <th >C10</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -474,6 +543,11 @@
                                                         <td>{{ $sum2 -> ∅3 }}</td>
                                                         <td>{{ $sum2 -> ∅4 }}</td>
                                                         <td>{{ $sum2 -> ∅5 }}</td>
+                                                        <td>{{ $sum2 -> ∅6 }}</td>
+                                                        <td>{{ $sum2 -> ∅7 }}</td>
+                                                        <td>{{ $sum2 -> ∅8 }}</td>
+                                                        <td>{{ $sum2 -> ∅9 }}</td>
+                                                        <td>{{ $sum2 -> ∅10 }}</td>
                                                     </tr>
                                                     @endforeach
                                                     <tr>
@@ -496,6 +570,11 @@
                                                         <th >C3</th>
                                                         <th >C4</th>
                                                         <th >C5</th>
+                                                        <th >C6</th>
+                                                        <th >C7</th>
+                                                        <th >C8</th>
+                                                        <th >C9</th>
+                                                        <th >C10</th>
                                                         <th>Total</th>
                                                     </tr>
                                                 </thead>
@@ -507,6 +586,11 @@
                                                         <td>{{ $spec -> spec3 }}</td>
                                                         <td>{{ $spec -> spec4 }}</td>
                                                         <td>{{ $spec -> spec5 }}</td>
+                                                        <td>{{ $spec -> spec6 }}</td>
+                                                        <td>{{ $spec -> spec7 }}</td>
+                                                        <td>{{ $spec -> spec8 }}</td>
+                                                        <td>{{ $spec -> spec9 }}</td>
+                                                        <td>{{ $spec -> spec10 }}</td>
                                                         <td>{{ $spec -> spectotal }}</td>
                                                     </tr>
 
@@ -522,6 +606,13 @@
                                                     <p>𝛺3 = 1 - {{ $spec -> ∅3 }} = {{ $spec -> spec3 }}</p>
                                                     <p>𝛺4 = 1 - {{ $spec -> ∅4 }} = {{ $spec -> spec4 }}</p>
                                                     <p>𝛺5 = 1 - {{ $spec -> ∅5 }} = {{ $spec -> spec5 }}</p>
+                                                </div>
+                                                <div style="display: inline-block; width: 49%;">
+                                                    <p>𝛺6 = 1 - {{ $spec -> ∅6 }} = {{ $spec -> spec6 }}</p>
+                                                    <p>𝛺7 = 1 - {{ $spec -> ∅7 }} = {{ $spec -> spec7 }}</p>
+                                                    <p>𝛺8 = 1 - {{ $spec -> ∅8 }} = {{ $spec -> spec8 }}</p>
+                                                    <p>𝛺9 = 1 - {{ $spec -> ∅9 }} = {{ $spec -> spec9 }}</p>
+                                                    <p>𝛺10 = 1 - {{ $spec -> ∅10 }} = {{ $spec -> spec10 }}</p>
                                                 </div>
                                             </div>
                                             @endforeach
@@ -548,6 +639,11 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
+                                                            <th >C6</th>
+                                                            <th >C7</th>
+                                                            <th >C8</th>
+                                                            <th >C9</th>
+                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -558,6 +654,11 @@
                                                             <td>{{ $weight -> weight3 }}</td>
                                                             <td>{{ $weight -> weight4 }}</td>
                                                             <td>{{ $weight -> weight5 }}</td>
+                                                            <td>{{ $weight -> weight6 }}</td>
+                                                            <td>{{ $weight -> weight7 }}</td>
+                                                            <td>{{ $weight -> weight8 }}</td>
+                                                            <td>{{ $weight -> weight9 }}</td>
+                                                            <td>{{ $weight -> weight10 }}</td>
                                                         </tr>
                                                         <tr>
                                                             <td></td>
@@ -572,6 +673,13 @@
                                                         <p>𝑊3 = {{ $weight -> spec3 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight3 }}</p>
                                                         <p>𝑊4 = {{ $weight -> spec4 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight4 }}</p>
                                                         <p>𝑊5 = {{ $weight -> spec5 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight5 }}</p>
+                                                    </div>
+                                                    <div style="display: inline-block; width: 49%;">
+                                                        <p>𝑊6 = {{ $weight -> spec6 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight6 }}</p>
+                                                        <p>𝑊7 = {{ $weight -> spec7 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight7 }}</p>
+                                                        <p>𝑊8 = {{ $weight -> spec8 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight8 }}</p>
+                                                        <p>𝑊9 = {{ $weight -> spec9 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight9 }}</p>
+                                                        <p>𝑊10 = {{ $weight -> spec10 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight10 }}</p>
                                                     </div>
                                                 </div>
                                                 @endforeach
@@ -596,6 +704,11 @@
                                                                 <th >C3</th>
                                                                 <th >C4</th>
                                                                 <th >C5</th>
+                                                                <th >C6</th>
+                                                                <th >C7</th>
+                                                                <th >C8</th>
+                                                                <th >C9</th>
+                                                                <th >C10</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody id="table-body4">
@@ -605,9 +718,9 @@
                                                         const tableBody4 = document.querySelector('#table-body4');
                                                         const psi = @json($psi);
 
-                                                        for (let i = 0; i < 10; i++) {
+                                                        for (let i = 0; i < 20; i++) {
                                                             const tr = document.createElement('tr');
-                                                            for (let j = 0; j < 5; j++) {
+                                                            for (let j = 0; j < 10; j++) {
                                                                 const td = document.createElement('td');
                                                                 const p = document.createElement('p');
                                                                 p.textContent = psi[0]['psia'+(i+1)+'c'+(j+1)].toFixed(6);
@@ -632,6 +745,13 @@
                                                             <p>∅ = {{ $psijoin -> na1c4 }} × {{ $psijoin -> weight4 }}  = {{ $psijoin -> psia1c4 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c5 }} × {{ $psijoin -> weight5 }}  = {{ $psijoin -> psia1c5 }}</p>
                                                         </div>
+                                                        <div style="display: inline-block; width: 49%;">
+                                                            <p>∅ = {{ $psijoin -> na1c6 }} × {{ $psijoin -> weight6 }}  = {{ $psijoin -> psia1c6 }}</p>
+                                                            <p>∅ = {{ $psijoin -> na1c7 }} × {{ $psijoin -> weight7 }}  = {{ $psijoin -> psia1c7 }}</p>
+                                                            <p>∅ = {{ $psijoin -> na1c8 }} × {{ $psijoin -> weight8 }}  = {{ $psijoin -> psia1c8 }}</p>
+                                                            <p>∅ = {{ $psijoin -> na1c9 }} × {{ $psijoin -> weight9 }}  = {{ $psijoin -> psia1c9 }}</p>
+                                                            <p>∅ = {{ $psijoin -> na1c10 }} × {{ $psijoin -> weight10 }}  = {{ $psijoin -> psia1c10 }}</p>
+                                                        </div>
                                                     </div>
                                                     @endforeach
                                                 </div>
@@ -649,7 +769,7 @@
                                                         </thead>
                                                         <tbody id="table-body5">
                                                             @foreach ($sum3 as $sum3)
-                                                            @for($i=1; $i<=10; $i++)
+                                                            @for($i=1; $i<=20; $i++)
                                                             <tr>
                                                                 <td>A{{$i}}</td>
                                                                 <td style="text-align: left">

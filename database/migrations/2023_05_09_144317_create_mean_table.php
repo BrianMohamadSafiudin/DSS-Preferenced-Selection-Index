@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('mean_id')->unique();
             $table->unsignedBigInteger('cases_id');
             $table->foreign('cases_id')->references('cases_id')->on('cases')->onDelete('CASCADE');
-            for ($i = 1; $i <= 5; $i++) {
+            for ($i = 1; $i <= 10; $i++) {
                 $table->float('mean'.$i, 10, 6)->default(0);
             }
             $table->timestamps();
