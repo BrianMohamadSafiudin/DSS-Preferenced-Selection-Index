@@ -17,11 +17,21 @@ class Maxmin extends Model
         'max3',
         'max4',
         'max5',
+        'max6',
+        'max7',
+        'max8',
+        'max9',
+        'max10',
         'min1',
         'min2',
         'min3',
         'min4',
         'min5',
+        'min6',
+        'min7',
+        'min8',
+        'min9',
+        'min10',
     ];
 }
 

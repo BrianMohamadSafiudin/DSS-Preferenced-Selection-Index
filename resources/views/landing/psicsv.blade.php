@@ -57,6 +57,11 @@
                                                 <th >C3</th>
                                                 <th >C4</th>
                                                 <th >C5</th>
+                                                <th >C6</th>
+                                                <th >C7</th>
+                                                <th >C8</th>
+                                                <th >C9</th>
+                                                <th >C10</th>
                                             </tr>
                                         </thead>
                                     </thead>

@@ -39,7 +39,7 @@
                                 <div class="col-10">
                                     <p>Untuk melanjutkan ke langkah berikutnya, pastikan Anda telah melengkapi semua kolom yang diperlukan. Jika tidak yakin tentang cara kerja algoritma, Anda dapat mengunjungi halaman "Cara Kerja" untuk panduan komprehensif.
 
-                                        <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">Cara Kerja</a> ini memberikan perincian algoritma langkah demi langkah, sehingga Anda bisa mendapatkan pemahaman yang lebih baik tentang cara kerjanya. Kami percaya bahwa transparansi adalah kuncinya, dan kami ingin memastikan bahwa Anda memiliki semua informasi yang Anda perlukan untuk membuat keputusan yang tepat. 
+                                        <a style="text-decoration: none; color: #fb6340;" href="/how-it-works">Cara Kerja</a> ini memberikan perincian algoritma langkah demi langkah, sehingga Anda bisa mendapatkan pemahaman yang lebih baik tentang cara kerjanya. Kami percaya bahwa transparansi adalah kuncinya, dan kami ingin memastikan bahwa Anda memiliki semua informasi yang Anda perlukan untuk membuat keputusan yang tepat.
 
                                         Terima kasih telah memilih platform kami, dan kami berharap layanan kami bermanfaat dan ramah pengguna.</p>
                                     </div>
@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                             <script>
-                                                const alternativeCount = 10;
+                                                const alternativeCount = 20;
                                                 const alternativeContainer = document.querySelector('#alternative-container');
 
                                                 for (let i = 1; i <= alternativeCount; i++) {
@@ -130,13 +130,22 @@
                                                 <div class="col-12">
                                                     <p style="font-size: 13px">Silakan masukkan skor kriteria untuk setiap alternatif yang dimasukkan sebelumnya. Skor ini mencerminkan pentingnya atau preferensi setiap kriteria dalam proses pengambilan keputusan. Isi semua kriteria yang tersedia yaitu :</p>
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
-                                                        <div style="flex-basis: 50%;">
+                                                        <div style="flex-basis: 25%;">
                                                             <ul>
                                                                 <li>C1 : Penghasilan Tidak Tetap</li>
                                                                 <li>C2 : Tidak Memiliki Aset</li>
                                                                 <li>C3 : Memerlukan Bantuan Pangan Untuk Penduduk Miskin</li>
                                                                 <li>C4 : Memiliki Rumah Diatas Tanah Milik Sendiri</li>
                                                                 <li>C5 : Rumah Yang Dimiliki Tidak Layak Huni</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div style="flex-basis: 75%;">
+                                                            <ul>
+                                                                <li>C6  : Work Experience</li>
+                                                                <li>C7  : Health Facilities</li>
+                                                                <li>C8  : Language Skills</li>
+                                                                <li>C9  : Working Environment</li>
+                                                                <li>C10 : Geographical Factor</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -152,14 +161,19 @@
                                                             <th >C3</th>
                                                             <th >C4</th>
                                                             <th >C5</th>
+                                                            <th >C6</th>
+                                                            <th >C7</th>
+                                                            <th >C8</th>
+                                                            <th >C9</th>
+                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body">
                                                     </tbody>
                                                 </table>
                                                 <script>
-                                                    const rowCount = 10;
-                                                    const colCount = 5;
+                                                    const rowCount = 20;
+                                                    const colCount = 10;
                                                     const tableBody = document.querySelector('#table-body');
 
                                                     for (let i = 0; i < rowCount; i++) {

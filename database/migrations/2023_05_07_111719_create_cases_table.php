@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('cases', function (Blueprint $table) {
             $table->bigIncrements('cases_id')->unique();
-            for ($i = 1; $i <= 10; $i++) {
+            for ($i = 1; $i <= 20; $i++) {
                 $table->string('alternative'.$i)->default(0);
             }
-            for ($i = 1; $i <= 10; $i++) {
-                for ($j = 1; $j <= 5; $j++) {
+            for ($i = 1; $i <= 20; $i++) {
+                for ($j = 1; $j <= 10; $j++) {
                     $columnName = 'a'.$i.'c'. $j;
                     $table->float($columnName)->default(0);
                 }
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-
+    
     /**
     * Reverse the migrations.
     *
