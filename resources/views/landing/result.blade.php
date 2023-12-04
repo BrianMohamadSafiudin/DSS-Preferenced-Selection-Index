@@ -220,12 +220,12 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-2">Example</h2>
+                                                    <h2 class="fs-title text-center mt-2">Cara Menghitung Normalisasi</h2>
                                                 </div>
                                             </div>
                                             <div class="row row justify-content-center">
                                                 <div class="col-12">
-                                                    <p class="text-center">Berikut adalah contoh perhitungan keuntungan dan biaya untuk Kriteria 1 dan Kriteria 2, di mana Kriteria 1 adalah keuntungan dan Kriteria 2 adalah biaya. Tabel berikut menunjukkan langkah-langkah perhitungan :</p>
+                                                    <p class="text-center">Berikut adalah contoh perhitungan keuntungan dan biaya untuk Kriteria 1 dan Kriteria 8, di mana Kriteria 1 adalah keuntungan dan Kriteria 8 adalah biaya. Tabel berikut menunjukkan langkah-langkah perhitungan :</p>
                                                 </div>
                                             </div>
                                             <div style="font-size: 13px; color: grey;">
@@ -391,9 +391,9 @@
                                                     <p>𝑁 = {{ $mean->m2 }} / 45 = {{ $mean->mean2 }}</p>
                                                     <p>𝑁 = {{ $mean->m3 }} / 45 = {{ $mean->mean3 }}</p>
                                                     <p>𝑁 = {{ $mean->m4 }} / 45 = {{ $mean->mean4 }}</p>
-                                                    <p>𝑁 = {{ $mean->m5 }} / 45 = {{ $mean->mean5 }}</p>
                                                 </div>
                                                 <div style="display: inline-block; width: 49%;">
+                                                    <p>𝑁 = {{ $mean->m5 }} / 45 = {{ $mean->mean5 }}</p>
                                                     <p>𝑁 = {{ $mean->m6 }} / 45 = {{ $mean->mean6 }}</p>
                                                     <p>𝑁 = {{ $mean->m7 }} / 45 = {{ $mean->mean7 }}</p>
                                                     <p>𝑁 = {{ $mean->m8 }} / 45 = {{ $mean->mean8 }}</p>
@@ -465,9 +465,9 @@
                                             <p>∅21 = ({{ $item -> na2c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a2c1 }}</p>
                                             <p>∅31 = ({{ $item -> na3c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a3c1 }}</p>
                                             <p>∅41 = ({{ $item -> na4c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a4c1 }}</p>
-                                            <p>∅51 = ({{ $item -> na5c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a5c1 }}</p>
                                         </div>
                                         <div style="display: inline-block; width: 49%;">
+                                            <p>∅51 = ({{ $item -> na5c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a5c1 }}</p>
                                             <p>∅61 = ({{ $item -> na6c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a6c1 }}</p>
                                             <p>∅71 = ({{ $item -> na7c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a7c1 }}</p>
                                             <p>∅81 = ({{ $item -> na8c1 }} - {{ $item -> mean1 }})^2  = {{ $item -> ∅a8c1 }}</p>
@@ -573,9 +573,9 @@
                                                     <p>𝛺2 = 1 - {{ $spec -> ∅2 }} = {{ $spec -> spec2 }}</p>
                                                     <p>𝛺3 = 1 - {{ $spec -> ∅3 }} = {{ $spec -> spec3 }}</p>
                                                     <p>𝛺4 = 1 - {{ $spec -> ∅4 }} = {{ $spec -> spec4 }}</p>
-                                                    <p>𝛺5 = 1 - {{ $spec -> ∅5 }} = {{ $spec -> spec5 }}</p>
                                                 </div>
                                                 <div style="display: inline-block; width: 49%;">
+                                                    <p>𝛺5 = 1 - {{ $spec -> ∅5 }} = {{ $spec -> spec5 }}</p>
                                                     <p>𝛺6 = 1 - {{ $spec -> ∅6 }} = {{ $spec -> spec6 }}</p>
                                                     <p>𝛺7 = 1 - {{ $spec -> ∅7 }} = {{ $spec -> spec7 }}</p>
                                                     <p>𝛺8 = 1 - {{ $spec -> ∅8 }} = {{ $spec -> spec8 }}</p>
@@ -634,9 +634,9 @@
                                                         <p>𝑊2 = {{ $weight -> spec2 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight2 }}</p>
                                                         <p>𝑊3 = {{ $weight -> spec3 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight3 }}</p>
                                                         <p>𝑊4 = {{ $weight -> spec4 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight4 }}</p>
-                                                        <p>𝑊5 = {{ $weight -> spec5 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight5 }}</p>
                                                     </div>
                                                     <div style="display: inline-block; width: 49%;">
+                                                        <p>𝑊5 = {{ $weight -> spec5 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight5 }}</p>
                                                         <p>𝑊6 = {{ $weight -> spec6 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight6 }}</p>
                                                         <p>𝑊7 = {{ $weight -> spec7 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight7 }}</p>
                                                         <p>𝑊8 = {{ $weight -> spec8 }} / {{ $weight -> spectotal }}  = {{ $weight -> weight8 }}</p>
@@ -701,9 +701,9 @@
                                                             <p>∅ = {{ $psijoin -> na1c2 }} × {{ $psijoin -> weight2 }}  = {{ $psijoin -> psia1c2 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c3 }} × {{ $psijoin -> weight3 }}  = {{ $psijoin -> psia1c3 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c4 }} × {{ $psijoin -> weight4 }}  = {{ $psijoin -> psia1c4 }}</p>
-                                                            <p>∅ = {{ $psijoin -> na1c5 }} × {{ $psijoin -> weight5 }}  = {{ $psijoin -> psia1c5 }}</p>
                                                         </div>
                                                         <div style="display: inline-block; width: 49%;">
+                                                            <p>∅ = {{ $psijoin -> na1c5 }} × {{ $psijoin -> weight5 }}  = {{ $psijoin -> psia1c5 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c6 }} × {{ $psijoin -> weight6 }}  = {{ $psijoin -> psia1c6 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c7 }} × {{ $psijoin -> weight7 }}  = {{ $psijoin -> psia1c7 }}</p>
                                                             <p>∅ = {{ $psijoin -> na1c8 }} × {{ $psijoin -> weight8 }}  = {{ $psijoin -> psia1c8 }}</p>
@@ -712,31 +712,69 @@
                                                     @endforeach
                                                 </div>
                                                 <div class="col-12">
-                                                    <h2 class="fs-title text-center mt-3">Peringkat</h2>
+                                                    <hr>
+                                                    <h2 class="fs-title text-center mt-3">🌟Peringkat</h2>
+                                                    <hr>
                                                 </div>
                                                 <div class="col-4">
                                                     <table class="table table-bordered text-center">
-                                                        <thead class="">
+                                                        <thead>
                                                             <tr>
                                                                 <th>No</th>
-                                                                <th >Alternatif</th>
-                                                                <th >Nilai Peringkat</th>
+                                                                <th>Alternatif</th>
+                                                                <th>Nilai Peringkat</th>
+                                                                <th>Peringkat</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody id="table-body5">
-                                                            @foreach ($sum3 as $sum3)
-                                                            @for($i=1; $i<=45; $i++)
-                                                            <tr>
-                                                                <td>A{{$i}}</td>
-                                                                <td style="text-align: left">
-                                                                    {{ $sum3->{'alternative'.$i} }}
-                                                                </td>
-                                                                <td>
-                                                                    {{ $sum3->{'A'.$i} }}
-                                                                </td>
-                                                            </tr>
+                                                        <tbody>
+                                                        @php
+                                                            $firstSum3 = $sum3->first();
+                                                            $topAlternatives = [];
+                                                        @endphp
+
+                                                        @if($firstSum3)
+                                                            @for($i = 1; $i <= 45; $i++)
+                                                                <tr>
+                                                                    <td>A{{ $i }}</td>
+                                                                    <td style="text-align: center">
+                                                                        {{ $firstSum3->{'alternative'.$i} }}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $firstSum3->{'A'.$i} }}
+                                                                    </td>
+                                                                    <td>
+                                                                        @foreach ($sum3 as $data)
+                                                                            @php
+                                                                            $alternatives = [];
+                                                                                for($p = 1; $p <= 45; $p++)
+                                                                                    $alternatives[] = [
+                                                                                        'alternative' => $data->{'alternative' . $p},
+                                                                                        'value' => $data->{'A' . $p},
+                                                                                    ];
+                                                                                    usort($alternatives, function ($a, $b) {
+                                                                                        return $b['value'] <=> $a['value'];
+                                                                                    });
+                                                                            @endphp
+                                                                        @endforeach
+
+                                                                        @php $r = 1; @endphp
+
+                                                                        @foreach ($alternatives as $alternative)
+                                                                            @if($firstSum3->{'A'.$i} == $alternative['value'])
+                                                                                    @if($r == 1)
+                                                                                        @php $topAlternatives[] = $firstSum3->{'alternative'.$i} @endphp
+                                                                                    @endif
+                                                                                @break
+                                                                            @endif
+                                                                            @php $r++ @endphp
+                                                                        @endforeach
+                                                                        @php $peringkat = $r @endphp
+                                                                        {{ $peringkat }}
+                                                                    </td>
+                                                                </tr>
                                                             @endfor
-                                                            @endforeach
+                                                        @endif
+
                                                             <tr><td></td></tr>
                                                         </tbody>
                                                     </table>
@@ -745,7 +783,15 @@
                                                     <h2 class="fs-title text-center mt-3">Ringkasan</h2>
                                                 </div>
                                                 <div class="col-10">
-                                                    <p>Metode PSI digunakan untuk mengevaluasi berbagai opsi dan menentukan yang paling sesuai berdasarkan kebutuhan dan preferensi pengguna. Pilihan <span style="color: #fb6340;">{{ $highestRanking->tabel }}</span> memiliki nilai PSI tertinggi yaitu <span style="color: #fb6340;">{{ $highestRanking->rank }}</span>, menunjukkan bahwa itu merupakan pilihan yang paling direkomendasikan. Kesimpulan ini didasarkan pada analisis data yang hati-hati dan pertimbangan berbagai faktor, menjadikannya pilihan terbaik untuk pengguna mencapai hasil yang diinginkan.</p></p>
+                                                    <p>Metode PSI digunakan untuk mengevaluasi berbagai opsi dan menentukan yang paling sesuai berdasarkan kebutuhan dan preferensi pengguna. Pilihan
+                                                        <span style="color: #fb6340;">
+                                                            @if (!empty($topAlternatives))
+                                                                {{ implode(', ', $topAlternatives) }}
+                                                            @else
+                                                                Tidak ada alternatif dengan peringkat satu.
+                                                            @endif
+                                                        </span>
+                                                    memiliki nilai PSI tertinggi yaitu <span style="color: #fb6340;">{{ $highestRanking->rank }}</span>, menunjukkan bahwa itu merupakan pilihan yang paling direkomendasikan. Kesimpulan ini didasarkan pada analisis data yang hati-hati dan pertimbangan berbagai faktor, menjadikannya pilihan terbaik untuk pengguna mencapai hasil yang diinginkan.</p></p>
                                                     <button class="buttonCustom" style="margin-left: 40px" onclick="location.href='/psi';">Temukan Lebih Banyak Kasus?</button>
                                                     <button class="buttonCustom" onclick="location.href='/';">Bawa Saya ke Halaman Utama</button>
                                                 </div>
