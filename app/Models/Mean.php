@@ -19,6 +19,5 @@ class Mean extends Model
     'mean6',
     'mean7',
     'mean8',
-    'mean9',
-    'mean10'];
+];
 }

@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                             <script>
-                                                const alternativeCount = 20;
+                                                const alternativeCount = 45;
                                                 const alternativeContainer = document.querySelector('#alternative-container');
 
                                                 for (let i = 1; i <= alternativeCount; i++) {
@@ -130,22 +130,20 @@
                                                 <div class="col-12">
                                                     <p style="font-size: 13px">Silakan masukkan skor kriteria untuk setiap alternatif yang dimasukkan sebelumnya. Skor ini mencerminkan pentingnya atau preferensi setiap kriteria dalam proses pengambilan keputusan. Isi semua kriteria yang tersedia yaitu :</p>
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
-                                                        <div style="flex-basis: 25%;">
+                                                        <div style="flex-basis: 20%;">
                                                             <ul>
-                                                                <li>C1 : Penghasilan Tidak Tetap</li>
-                                                                <li>C2 : Tidak Memiliki Aset</li>
-                                                                <li>C3 : Memerlukan Bantuan Pangan Untuk Penduduk Miskin</li>
-                                                                <li>C4 : Memiliki Rumah Diatas Tanah Milik Sendiri</li>
-                                                                <li>C5 : Rumah Yang Dimiliki Tidak Layak Huni</li>
+                                                                <li>C1 : Jumlah Bumil/menyusui</li>
+                                                                <li>C2 : Jumlah Usia Dini (Balita)</li>
+                                                                <li>C3 : Jumlah Disabilitas</li>
+                                                                <li>C4 : Humlah Lansia</li>
+                                                                <li>C5 : Jumlah Anak SMA</li>
                                                             </ul>
                                                         </div>
-                                                        <div style="flex-basis: 75%;">
+                                                        <div style="flex-basis: 70%;">
                                                             <ul>
-                                                                <li>C6  : Work Experience</li>
-                                                                <li>C7  : Health Facilities</li>
-                                                                <li>C8  : Language Skills</li>
-                                                                <li>C9  : Working Environment</li>
-                                                                <li>C10 : Geographical Factor</li>
+                                                                <li>C6  : Jumlah Anak SMP</li>
+                                                                <li>C7  : Jumlah Anak SD</li>
+                                                                <li>C8  : Jumlah ART</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -164,16 +162,14 @@
                                                             <th >C6</th>
                                                             <th >C7</th>
                                                             <th >C8</th>
-                                                            <th >C9</th>
-                                                            <th >C10</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body">
                                                     </tbody>
                                                 </table>
                                                 <script>
-                                                    const rowCount = 20;
-                                                    const colCount = 10;
+                                                    const rowCount = 45;
+                                                    const colCount = 8;
                                                     const tableBody = document.querySelector('#table-body');
 
                                                     for (let i = 0; i < rowCount; i++) {

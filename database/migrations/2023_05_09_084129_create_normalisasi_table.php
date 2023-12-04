@@ -17,10 +17,10 @@ return new class extends Migration
             $table->bigIncrements('normalisasi_id')->unique();
             $table->unsignedBigInteger('cases_id');
             $table->foreign('cases_id')->references('cases_id')->on('cases')->onDelete('CASCADE');
-            for ($i = 1; $i <= 20; $i++) {
-                for ($j = 1; $j <= 10; $j++) {
+            for ($i = 1; $i <= 45; $i++) {
+                for ($j = 1; $j <= 8; $j++) {
                     $columnName = 'na'.$i.'c'. $j;
-                    $table->float($columnName, 10, 6)->default(0);
+                    $table->float($columnName, 8, 6)->default(0);
                 }
             }
             $table->timestamps();

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigIncrements('psi_id')->unique();
             $table->unsignedBigInteger('cases_id');
             $table->foreign('cases_id')->references('cases_id')->on('cases')->onDelete('CASCADE');
-            for ($i = 1; $i <= 20; $i++) {
-                for ($j = 1; $j <= 10; $j++) {
+            for ($i = 1; $i <= 45; $i++) {
+                for ($j = 1; $j <= 8; $j++) {
                     $columnName = 'psia'.$i.'c'. $j;
                     $table->float($columnName, 6, 6)->default(0);
                 }

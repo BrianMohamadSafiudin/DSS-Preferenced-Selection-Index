@@ -20,8 +20,6 @@ class Maxmin extends Model
         'max6',
         'max7',
         'max8',
-        'max9',
-        'max10',
         'min1',
         'min2',
         'min3',
@@ -30,8 +28,6 @@ class Maxmin extends Model
         'min6',
         'min7',
         'min8',
-        'min9',
-        'min10',
     ];
 }
 
