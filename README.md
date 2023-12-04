@@ -12,6 +12,9 @@
 
 <div align="justify">
 PSI adalah sebuah aplikasi berbasis web yang dikembangkan menggunakan framework Laravel. Aplikasi ini bertujuan untuk menjadi sebuah Decision Support System (DSS) yang membantu pengguna dalam mencari pekerjaan yang cocok menggunakan metode Preferenced Selection Index (PSI).
+
+<br><br>
+<img src="Mockup.png">
 <br><br>
 Cara kerja PSI dimulai dengan pengguna memasukkan alternatif pekerjaan yang diperoleh dari berbagai sumber, seperti portal lowongan kerja atau informasi pekerjaan lainnya. Setiap alternatif pekerjaan tersebut akan memiliki kriteria-kriteria yang relevan, seperti lokasi, gaji, lingkungan kerja, tingkat pendidikan, dan sebagainya.
 <br><br>
