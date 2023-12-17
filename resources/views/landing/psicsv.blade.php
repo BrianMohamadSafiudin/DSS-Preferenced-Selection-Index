@@ -66,7 +66,6 @@
                                                             <th>C5</th>
                                                             <th>C6</th>
                                                             <th>C7</th>
-                                                            <th>C8</th>
                                                         </tr>
                                                     </thead>
                                                     </thead>

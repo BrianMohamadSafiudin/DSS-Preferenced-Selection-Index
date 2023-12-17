@@ -18,6 +18,5 @@ class Spec extends Model
     'spec5',
     'spec6',
     'spec7',
-    'spec8',
     'spectotal'];
 }

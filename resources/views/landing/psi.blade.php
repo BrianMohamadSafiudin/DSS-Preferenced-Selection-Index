@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                             <script>
-                                                const alternativeCount = 45;
+                                                const alternativeCount = 15;
                                                 const alternativeContainer = document.querySelector('#alternative-container');
 
                                                 for (let i = 1; i <= alternativeCount; i++) {
@@ -132,18 +132,17 @@
                                                     <div style="display: flex; justify-content: space-between; font-size: 13px; color: grey;">
                                                         <div style="flex-basis: 20%;">
                                                             <ul>
-                                                                <li>C1 : Jumlah Bumil/menyusui</li>
-                                                                <li>C2 : Jumlah Usia Dini (Balita)</li>
-                                                                <li>C3 : Jumlah Disabilitas</li>
-                                                                <li>C4 : Humlah Lansia</li>
-                                                                <li>C5 : Jumlah Anak SMA</li>
+                                                                <li>C1 : Umur</li>
+                                                                <li>C2 : Pekerjaan</li>
+                                                                <li>C3 : Pendapatan Per Bulan</li>
+                                                                <li>C4 : Jumlah Tanggungan</li>
                                                             </ul>
                                                         </div>
                                                         <div style="flex-basis: 70%;">
                                                             <ul>
-                                                                <li>C6  : Jumlah Anak SMP</li>
-                                                                <li>C7  : Jumlah Anak SD</li>
-                                                                <li>C8  : Jumlah ART</li>
+                                                                <li>C5 : Status Tempat Tinggal</li>
+                                                                <li>C6  : Luas Tanah</li>
+                                                                <li>C7  : Jenis Penerangan</li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -161,15 +160,14 @@
                                                             <th >C5</th>
                                                             <th >C6</th>
                                                             <th >C7</th>
-                                                            <th >C8</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="table-body">
                                                     </tbody>
                                                 </table>
                                                 <script>
-                                                    const rowCount = 45;
-                                                    const colCount = 8;
+                                                    const rowCount = 15;
+                                                    const colCount = 7;
                                                     const tableBody = document.querySelector('#table-body');
 
                                                     for (let i = 0; i < rowCount; i++) {

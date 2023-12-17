@@ -27,7 +27,6 @@ class Maxmin extends Model
         'min5',
         'min6',
         'min7',
-        'min8',
     ];
 }
 

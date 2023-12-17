@@ -18,6 +18,5 @@ class Sum2 extends Model
     '∅5',
     '∅6',
     '∅7',
-    '∅8',
     ];
 }
