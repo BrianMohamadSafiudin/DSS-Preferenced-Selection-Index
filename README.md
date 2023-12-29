@@ -6,8 +6,20 @@
   <a href="https://laravel.com" target="_blank">
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
   </a>
+    <a href="https://svgsilh.com/svg/39658.svg" target="_blank">
+    <img src="https://svgsilh.com/svg/39658.svg" width="60" alt="Bootstrap Logo">
+  </a>
+<a href="https://seekicon.com/artist/bootstrap.svg" target="_blank">
+    <img src="https://seekicon.com/artist/bootstrap.svg" width="150" alt="Bootstrap Logo">
+  </a>
+    <a href="https://svgsilh.com/svg/39658.svg" target="_blank">
+    <img src="https://svgsilh.com/svg/39658.svg" width="60" alt="Bootstrap Logo">
+  </a>
+<a href="https://www.svgrepo.com/show/303251/mysql-logo.svg" target="_blank">
+    <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" width="150" alt="Bootstrap Logo">
+  </a>
 </p>
-  
+
 </div>
 
 <div align="justify">
